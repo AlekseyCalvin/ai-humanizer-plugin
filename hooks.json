@@ -1,0 +1,12 @@
+{
+  "ai-humanizer": {
+    "enabled": true,
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "./bin/score --hook pre-invocation",
+        "timeout": 5
+      }
+    ]
+  }
+}

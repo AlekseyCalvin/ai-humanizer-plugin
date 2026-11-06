@@ -1,0 +1,61 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "ai-humanizer",
+  "displayName": "AI Humanizer",
+  "version": "2.2.0",
+  "description": "Rewrite AI-generated text to sound natural, defeat AI detectors, and automatically score and revise prose.",
+  "author": {
+    "name": "mlswijerathne",
+    "url": "https://github.com/mlswijerathne/ai-humanizer-skill"
+  },
+  "homepage": "https://github.com/mlswijerathne/ai-humanizer-skill",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mlswijerathne/ai-humanizer-skill.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "humanizer",
+    "anti-detection",
+    "writing",
+    "editing",
+    "ai-slop",
+    "burstiness",
+    "perplexity",
+    "gptzero",
+    "turnitin",
+    "originality-ai"
+  ],
+  "logo": "./assets/icon.svg",
+  "suggestedPrompts": [
+    "Humanize this draft to sound natural and pass AI detection",
+    "Score this text for AI detection risk and revise weak sentences",
+    "Rewrite this article to vary sentence cadence and eliminate cliches"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "AI Humanizer",
+        "shortDescription": "Defeat AI detection and write naturally",
+        "longDescription": "AI Humanizer rewrites AI-generated drafts so they read with authentic human rhythm, varied cadence, and rich concrete diction while surviving statistical and neural AI detectors (GPTZero, Originality.ai, Turnitin, Copyleaks, Pangram, DetectGPT, Binoculars).\n\nAutomatically compels agents to evaluate, score, and revise their own writing before finalizing prose. It eliminates repetitive AI cliches, balances sentence burstiness, strips formatting watermarks, and runs an adversarial feedback loop. Ships with an automated detection-risk scoring engine for before/after analysis.",
+        "developerName": "mlswijerathne",
+        "category": "Productivity",
+        "websiteURL": "https://github.com/mlswijerathne/ai-humanizer-skill",
+        "capabilities": [
+          "Rewrite AI text to sound natural and authentically human",
+          "Survive statistical and neural AI detectors (GPTZero, Turnitin, Copyleaks, Pangram)",
+          "Automated detection-risk scoring (0-100) and iterative revision loop",
+          "Eliminate AI lexical tells, robotic rhythms, and formatting watermarks"
+        ],
+        "defaultPrompt": [
+          "Humanize this draft so it reads naturally and passes AI detectors.",
+          "Score this text with the detection risk estimator and revise it until it scores likely human.",
+          "Rewrite this article to increase burstiness, eliminate AI cliches, and preserve meaning."
+        ],
+        "brandColor": "#10A37F",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg"
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Universal launcher for ai-humanizer detection risk scorer
+# Automatically resolves Python 3 or Node.js runtime regardless of install location.
+
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PYTHON_SCRIPT="$DIR/../skills/ai-humanizer/scripts/score.py"
+[ ! -f "$PYTHON_SCRIPT" ] && PYTHON_SCRIPT="$DIR/../skill/scripts/score.py"
+NODE_SCRIPT="$DIR/score.js"
+
+if command -v python3 >/dev/null 2>&1 && [ -f "$PYTHON_SCRIPT" ]; then
+  exec python3 "$PYTHON_SCRIPT" "$@"
+elif command -v python >/dev/null 2>&1 && [ -f "$PYTHON_SCRIPT" ]; then
+  exec python "$PYTHON_SCRIPT" "$@"
+elif command -v node >/dev/null 2>&1 && [ -f "$NODE_SCRIPT" ]; then
+  exec node "$NODE_SCRIPT" "$@"
+else
+  echo "Error: Neither Python 3 nor Node.js found to run ai-humanizer scoring." >&2
+  exit 1
+fi

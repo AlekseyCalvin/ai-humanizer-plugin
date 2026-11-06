@@ -1,7 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "ai-humanizer",
-  "displayName": "AI Humanizer",
   "version": "2.2.0",
   "description": "Rewrite AI-generated text to sound natural, defeat AI detectors, and automatically score and revise prose.",
   "author": {
@@ -9,10 +8,7 @@
     "url": "https://github.com/mlswijerathne/ai-humanizer-skill"
   },
   "homepage": "https://github.com/mlswijerathne/ai-humanizer-skill",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mlswijerathne/ai-humanizer-skill.git"
-  },
+  "repository": "https://github.com/mlswijerathne/ai-humanizer-skill",
   "license": "MIT",
   "keywords": [
     "humanizer",
@@ -25,12 +21,6 @@
     "gptzero",
     "turnitin",
     "originality-ai"
-  ],
-  "logo": "./assets/icon.svg",
-  "suggestedPrompts": [
-    "Humanize this draft to sound natural and pass AI detection",
-    "Score this text for AI detection risk and revise weak sentences",
-    "Rewrite this article to vary sentence cadence and eliminate cliches"
   ],
   "extensions": {
     "com.openai": {
@@ -56,6 +46,15 @@
         "composerIcon": "./assets/icon.svg",
         "logo": "./assets/icon.svg"
       }
+    },
+    "com.google.antigravity": {
+      "displayName": "AI Humanizer",
+      "logo": "./assets/icon.svg",
+      "suggestedPrompts": [
+        "Humanize this draft to sound natural and pass AI detection",
+        "Score this text for AI detection risk and revise weak sentences",
+        "Rewrite this article to vary sentence cadence and eliminate cliches"
+      ]
     }
   }
 }

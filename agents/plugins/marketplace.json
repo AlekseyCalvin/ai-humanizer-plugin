@@ -1,0 +1,20 @@
+{
+  "name": "ai-humanizer",
+  "interface": {
+    "displayName": "AI Humanizer"
+  },
+  "plugins": [
+    {
+      "name": "ai-humanizer",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

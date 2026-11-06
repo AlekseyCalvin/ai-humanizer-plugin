@@ -1,0 +1,23 @@
+{
+  "name": "ai-humanizer",
+  "displayName": "AI Humanizer",
+  "version": "2.2.0",
+  "description": "Rewrite AI-generated text to sound natural, defeat AI detectors, and automatically score and revise prose.",
+  "author": {
+    "name": "mlswijerathne",
+    "url": "https://github.com/mlswijerathne/ai-humanizer-skill"
+  },
+  "homepage": "https://github.com/mlswijerathne/ai-humanizer-skill",
+  "repository": "https://github.com/mlswijerathne/ai-humanizer-skill",
+  "license": "MIT",
+  "keywords": [
+    "claude",
+    "claude-skill",
+    "claude-plugin",
+    "ai-humanizer",
+    "anti-detection",
+    "writing",
+    "editing",
+    "ai-slop"
+  ]
+}
